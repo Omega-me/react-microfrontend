@@ -3,8 +3,11 @@
 This react app uses craco js library for overriding webpack configurations of create-react-app template.
 There are four files that makes using of modulefederation webpack plugin available for react microfrontend architecture.
 `craco.config.js` => is used for overriding webpack configs.
+
 `modulefederation.config.js` => is used for adding configs on webpack modulefederation plugin
+
 `modulePath.config.json` => is used for adding paths of exported modules from other microfrontends and this file is extended on `tsconfig.json` which has `"baseUrl": "src"`
+
 `bootstrap.tsx` => has the role of `index.tsx` file is dynamicly imported on the `index.tsx`, without this dynamic import the modulefederation plugin wont work.
 
 ### `Below is a picture of how the modules point and should point to each other`
