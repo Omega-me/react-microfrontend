@@ -2,10 +2,10 @@
 
 This react app uses craco js library for overriding webpack configurations of create-react-app template.
 There are four files that makes using of modulefederation webpack plugin available for react microfrontend architecture.
-**craco.config.js** => is used for overriding webpack configs.
-**modulefederation.config.js** => is used for adding configs on webpack modulefederation plugin
-**modulePath.config.json** => is used for adding paths of exported modules from other microfrontends and this file is extended on **tsconfig.json** which has **"baseUrl": "src"**
-**bootstrap.tsx** => has the role of **index.tsx** file is dynamicly imported on the **index.tsx**, without this dynamic import the modulefederation plugin wont work.
+`craco.config.js` => is used for overriding webpack configs.
+`modulefederation.config.js` => is used for adding configs on webpack modulefederation plugin
+`modulePath.config.json` => is used for adding paths of exported modules from other microfrontends and this file is extended on `tsconfig.json` which has `"baseUrl": "src"`
+`bootstrap.tsx` => has the role of `index.tsx` file is dynamicly imported on the `index.tsx`, without this dynamic import the modulefederation plugin wont work.
 
 ### `Below is a picture of how the modules point and should point to each other`
 
@@ -44,7 +44,7 @@ Services modules form the collection of APIs that interact with the backend and 
 
 ## Available Scripts
 
-**Note** Scripts **npm start**, **npm run build** and **npm test** are not using **react-scripts** annymore but **craco** instead, this make webpack config overriding available.
+**Note** Scripts `npm start`, `npm run build` and `npm test` are not using `react-scripts` annymore but `craco` instead, this make webpack config overriding available.
 
 In the project directory, you can run:
 
@@ -52,7 +52,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The port for the development server can be changed **craco.config.js** file
+The port for the development server can be changed `craco.config.js` file
 The application is using craco js library for overriding webpack configurations from cra template
 
 The page will reload if you make edits.\
