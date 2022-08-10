@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "RemoteApp/App": ["app/App"]
+    }
+  }
+}
